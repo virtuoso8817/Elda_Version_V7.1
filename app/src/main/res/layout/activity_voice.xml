@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8EEEC"
+    tools:context=".VoiceActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="335dp"
+        android:layout_height="268dp"
+        android:layout_marginStart="136dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/right_side_back" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="205dp"
+        android:layout_height="233dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/left_below_back" />
+
+    <EditText
+        android:id="@+id/phonetextview"
+        android:layout_width="299dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="216dp"
+        android:background="@drawable/lavender_border"
+        android:hint="Enter Number"
+        android:paddingStart="15sp"
+        android:textColor="@color/grey"
+        android:textColorHint="#756C6C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/phonebutton"
+        android:layout_width="135dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/btn_selector"
+        android:shadowColor="@color/black"
+        android:text="Set SOS"
+        android:textColor="#3b688c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phonetextview" />
+
+    <TextView
+        android:id="@+id/knowMoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Know more about SOS"
+        android:textColor="#3b688c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phonebutton"
+        android:clickable="true"
+        android:onClick="showSOSInfo"/>
+
+    <LinearLayout
+        android:id="@+id/sosInfoBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/lavender_border"
+        android:clipChildren="false"
+
+        android:clipToPadding="false"
+        android:elevation="8dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/knowMoreTextView"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="32dp">
+
+        <!-- Add your content for the SOS info box here -->
+        <!-- For example, use a TextView to display the information -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="In case of emergency, this can be utilized by your elder for their safety. SOS will help them to contact you immediately. Enter the number in the box provided and click 'SET SOS'"
+            android:textColor="#3b688c" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

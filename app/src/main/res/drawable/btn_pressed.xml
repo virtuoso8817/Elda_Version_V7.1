@@ -1,0 +1,5 @@
+<!-- res/drawable/btn_pressed.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/lavender" />
+    <corners android:radius="8dp" />
+</shape>
